@@ -1,4 +1,11 @@
 # Todo List Application
+# Todo App
+
+![Todo App ](/src/assets/login.png "Sign In  ")
+![Todo App ](/src/assets/img2.png "Todo App  ")
+![Todo App ](/src/assets/img3.png "Todo App  ")
+
+This is a Todo app built with React, Redux Toolkit, and TypeScript...
 
 ## Overview
 This project is a **Todo List Application** built using modern web development technologies. The application allows users to manage tasks efficiently by adding notes, setting steps, due dates, weather and categorizing tasks into different sections like today's tasks and important tasks.
