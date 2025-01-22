@@ -1,4 +1,3 @@
-# Todo List Application
 # Todo App
 
 ![Todo App ](/src/assets/login.png "Sign In  ")
