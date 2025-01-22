@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 import { Doughnut } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import todo from '../../../assets/todo.jpg';
+import todo from '../../assets/todo.jpg';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 interface SidebarProps {

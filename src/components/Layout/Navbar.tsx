@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../types';
 import { toggleTheme } from '../../store/slices/themeSlice';
 import { Search, Grid2X2, Sun, Moon } from 'lucide-react';
-import logo from '../../../assets/logo.png';
+import logo from '../../assets/logo.png';
 interface NavbarProps {
   searchQuery: string;
   onSearchChange: (value: string) => void;
