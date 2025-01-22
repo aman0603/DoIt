@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#1E1F21];
+}
+
+/* Custom checkbox styles */
+input[type="checkbox"] {
+  @apply rounded-sm border-2 border-gray-600 bg-transparent checked:bg-[#3E9242] checked:border-[#3E9242] focus:ring-0 focus:ring-offset-0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#1E1F21];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-600;
+}
+.responsive-app {
+  /* Global responsive app styles */
+}
+
+/* Define the responsive grid layout */
+.grid-cols-responsiveLayout {
+  grid-template-columns:
+    /* Default for larger screens */
+    [left-sidebar] minmax(200px, 1fr)
+    [main-content] 1fr
+    [right-sidebar] minmax(300px, 1fr);
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 1024px) {
+  /* On tablets and smaller screens, stack the layout vertically */
+  .grid-cols-responsiveLayout {
+    grid-template-columns: [main-content] 1fr;
+    grid-template-rows: [left-sidebar] auto [main-content] 1fr [right-sidebar] auto;
+  }
+  
+  /* Show/hide elements based on screen size and state */
+  .grid-cols-responsiveLayout > [class*="col-span-full"] {
+    grid-column: 1;
+    grid-row: v-bind; /* Adjust row based on component order or explicitly define */
+  }
+}
+
+@media (max-width: 768px) {
+  /* On mobile devices, further adjustments */
+  .grid-cols-responsiveLayout > [class*="col-span-full"] {
+    /* Additional styles for mobile */
+  }
+  
+  /* Navbar and other elements can also be targeted for mobile-specific styles */
+  .Navbar {
+    /* Mobile navbar styles */
+  }
+}
