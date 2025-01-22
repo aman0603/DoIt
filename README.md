@@ -1,7 +1,7 @@
 # Todo List Application
 
 ## Overview
-This project is a **Todo List Application** built using modern web development technologies. The application allows users to manage tasks efficiently by adding notes, setting steps, due dates, and categorizing tasks into different sections like today's tasks and important tasks.
+This project is a **Todo List Application** built using modern web development technologies. The application allows users to manage tasks efficiently by adding notes, setting steps, due dates, weather and categorizing tasks into different sections like today's tasks and important tasks.
 
 ## Features
 - **Add Tasks**: Users can add tasks with notes, steps, and due dates.
@@ -13,6 +13,8 @@ This project is a **Todo List Application** built using modern web development t
   - Set due date
   - Write notes
   - Write steps
+  - Weather update
+    
 - **Login/Authentication**: Secure login system to manage tasks per user.
 - **Responsive Design**: Styled with **Tailwind CSS** to ensure compatibility across devices.
 - **State Management**: Powered by **Redux Toolkit** for managing application state seamlessly.
@@ -34,37 +36,29 @@ This project is a **Todo List Application** built using modern web development t
 
 1. **Clone the Repository**
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone [https://github.com/aman0603/DoIt.git]
    ```
 
 2. **Install Dependencies**
    ```bash
    npm install
    ```
-   or
-   ```bash
-   yarn install
-   ```
+  
 
 3. **Create a `.env` File**
    - Add necessary environment variables for authentication or API configurations. Example:
      ```env
-     REACT_APP_API_URL=<your-api-url>
-     REACT_APP_AUTH_KEY=<your-auth-key>
+     VITE_WEATHER_API_KEY=  
      ```
 
 4. **Start the Development Server**
    ```bash
-   npm start
+   npm run dev
    ```
-   or
-   ```bash
-   yarn start
-   ```
+ 
 
 5. **Open in Browser**
-   Visit [http://localhost:3000](http://localhost:3000) to view the application.
+   Visit [https://todo-web-xi.vercel.app/) to view the application.
 
 ## Folder Structure
 ```
@@ -99,12 +93,11 @@ This project is a **Todo List Application** built using modern web development t
    - A simple login system to authenticate users and segregate task data.
 5. **Visual Charts**
    - Displays task completion stats (e.g., completed vs pending tasks) using charts.
-
+6. **openweather api integration**
+   -Display temprature and weather condition
 ## Available Scripts
-- **`npm start`**: Runs the application in development mode.
+- **`npm run dev`**: Runs the application in development mode.
 - **`npm run build`**: Builds the application for production.
-- **`npm test`**: Launches the test runner.
-- **`npm run eject`**: Ejects the app from Create React App (use with caution).
 
 ## Dependencies
 - React
@@ -119,10 +112,7 @@ This project is a **Todo List Application** built using modern web development t
 - Add notifications for overdue tasks.
 - Enable sharing tasks with other users.
 - Add a calendar view for better task visualization.
-
-## License
-This project is licensed under the MIT License.
-
+  
 ## Acknowledgements
 - Redux Toolkit Documentation
 - Tailwind CSS Documentation
